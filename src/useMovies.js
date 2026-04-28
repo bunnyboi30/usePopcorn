@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const KEY = "1ffda6cc";
+const KEY = process.env.REACT_APP_API_KEY;
 
 export function useMovies(query, callback) {
   const [movies, setMovies] = useState([]);
